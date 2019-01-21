@@ -101,7 +101,6 @@ function core_customizer_settings($wp_customize) {
     **                             **
     ********************************/
 
-
     $wp_customize->add_setting( 'core_navbar_accent', 
     array(
         'default'    => 'light',
@@ -153,6 +152,13 @@ function core_customizer_settings($wp_customize) {
             '-fluid' => 'Fluid',
             '' => 'Fixed',
     ) ) ) );
+    
+    /********************************
+    **                             **
+    *********     Slider      *******
+    **                             **
+    ********************************/
+    
 }
 
 add_action('customize_register', 'core_customizer_settings');
@@ -178,17 +184,17 @@ function core_custom_colors() {
     ****************************************/
     ?>
     <style>
-    /* main color */
+        /* main color */
         #site-title a, h1, h2, h2.page-title, h2.post-title, h2 a:link, h2 a:visited, footer h3 { 
             color:  <?php echo $main_color; ?>; 
         } 
-        
-    /* Navbar Background */
+            
+        /* Navbar Background */
         .navbar-background {
             background-color: <?php echo $navbar_color; ?>; 
         }
  
-    /* secondary color */
+        /* secondary color */
         #site-description, .sidebar h3, h4, h5, h6 {
             color:  <?php echo $secondary_color; ?>; 
         }
