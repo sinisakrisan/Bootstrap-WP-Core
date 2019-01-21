@@ -26,17 +26,15 @@ Core Theme is a simple, Gutenberg-compatible WordPress starter theme loaded with
 
 ### Gutenberg Compatibility
 
-    Gutenberg editor stylesheet – into which has been copy-pasted the typography styles from Bootstrap 4’s Reboot CSS (see http://getbootstrap.com/docs/4.1/content/reboot/).
-        Note: Blog post and page content in theme’s frontend are controlled by Bootstrap’s columnar grid layout – not by the Gutenberg editor CSS. This means that b4st does not support Gutenberg’s extra-wide image blocks.
+Gutenberg editor stylesheet – into which has been copy-pasted the typography styles from Bootstrap 4’s Reboot CSS (see http://getbootstrap.com/docs/4.1/content/reboot/).
+Note: Blog post and page content in theme’s frontend are controlled by Bootstrap’s columnar grid layout – not by the Gutenberg editor CSS. This means that Core Theme does not support Gutenberg’s extra-wide image blocks.
 
-Child-Theme Friendly
+### Child-Theme Friendly
 
-    Many functions are pluggable.
-        Note: Although b4st was originally intended as a simple starter theme (hence the name b4st), several developers wanted child theme capability. So the functions have been made ‘pluggable’. (However, b4st can still be used as a starter theme.)
+Many functions are pluggable.
+**Note:** Although Core Theme was originally intended as a simple starter theme, several developers wanted child theme capability. So the functions have been made ‘pluggable’.
 
-    Theme hooks – paired before and after the navbar, post/page main, (optional sidebar) and footer. Parent theme hooks are able to recieve actions from a child theme.
-
-    Also, the navbar brand, navbar search form and sub-footer “bottomline” are inserted using pluggable hooks. So, a child theme can override these.
-
-    Documentation on b4st theme hooks can be found in the wiki.
+- Theme hooks – paired before and after the navbar, post/page main, (optional sidebar) and footer. Parent theme hooks are able to recieve actions from a child theme.
+- Also, the navbar brand, navbar search form and sub-footer “bottomline” are inserted using pluggable hooks. So, a child theme can override these
+- Documentation on Core theme hooks can be found in the wiki.
 
