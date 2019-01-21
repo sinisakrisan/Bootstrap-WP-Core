@@ -1,40 +1,27 @@
-Bootstrap WP Core – A Bootstrap 4 Core Theme, for WordPress 5
+# Core; Bootstrap 4 Theme, for WordPress 5
 
-Version 1.0
+#### Version 1.0
 
-https://github.com/SimonPadbury/b4st
+**Forked from:** B4ST https://github.com/SimonPadbury/b4st
 
-b4st is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.
-Basic features
+**Third Party Scripts Used:**
+- WP Bootstrap Navwalker https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 
-    UNLICENCE (open source).
+Core Theme is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.
 
-    Simple, intuitive, clean code. Theme CSS and JS, functions and loops are organized into different folders.
+**Dependencies**
+- Bootstrap 4 enqueued and served from the theme
+- jQuery and Modernizr enqueued and served from the WordPress
+- Bootstrap 4 and Popper javascripts engueued and served from the theme
+- Font Awesome 5 – enqueued and served by *use.fontawesome.com*
 
-    A starter CSS theme – /theme/css/b4st.css, enqueued. (Note: do not put your styles in styles.css, because that is not enqueued.)
-
-    Sidebar-widget-area is optional. If no widgets are dropped into the sidebar, then the sidebar will not be shown on the frontend (and so the main column is automatically the full width of the Bootstrap .container).
-
-Dependencies
-
-    jQuery and Modernizr – enqueued (served from the WordPress core).
-
-    Bootstrap 4.1.3 CSS – enqueued (served by cdnjs.com CDN).
-
-    Bootstrap 4.1.3 and Popper 1.14.3 bundle JS – enqueued (served by cdnjs.com CDN). Popper is needed by Bootstrap popovers, tooltips and collapsed navbar “hamburger” action.
-
-    Font Awesome 5.6.1 – enqueued (CSS served by use.fontawesome.com CDN).
-
-Bootstrap Integration
-
-    Bootstrap navbar with WordPress menu and search.
-        Navbar dropdowns (child menus) are handled by a custom walker nav menu class.
-
-    Bootstrap customized comments and feedback response form.
-
-    Bootstrap pagination for:
-        blog index and blog category pages
-        Bootstrap pagination for posts/pages if split over a series of 'pages'
+**Bootstrap Integration**
+- Bootstrap navbar with WordPress menu and search
+- Navbar dropdowns (child menus) are handled by a third-party walker nav menu class.
+- Bootstrap customized comments and feedback response form.
+- Bootstrap pagination for:
+⋅⋅* Blog index and blog category pages
+⋅⋅* Bootstrap pagination for posts/pages if split over a series of 'pages'
 
 Gutenberg Compatibility
 
