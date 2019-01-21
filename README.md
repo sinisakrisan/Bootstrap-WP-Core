@@ -7,23 +7,24 @@
 **Third Party Scripts Used:**
 - WP Bootstrap Navwalker https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 
+## Description
 Core Theme is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.
 
-**Dependencies**
+### Dependencies
 - Bootstrap 4 enqueued and served from the theme
 - jQuery and Modernizr enqueued and served from the WordPress
 - Bootstrap 4 and Popper javascripts engueued and served from the theme
 - Font Awesome 5 – enqueued and served by *use.fontawesome.com*
 
-**Bootstrap Integration**
+### Bootstrap Integration
 - Bootstrap navbar with WordPress menu and search
 - Navbar dropdowns (child menus) are handled by a third-party walker nav menu class.
 - Bootstrap customized comments and feedback response form.
 - Bootstrap pagination for:
-⋅⋅* Blog index and blog category pages
-⋅⋅* Bootstrap pagination for posts/pages if split over a series of 'pages'
+  * Blog index and blog category pages
+  * Bootstrap pagination for posts/pages if split over a series of 'pages'
 
-Gutenberg Compatibility
+### Gutenberg Compatibility
 
     Gutenberg editor stylesheet – into which has been copy-pasted the typography styles from Bootstrap 4’s Reboot CSS (see http://getbootstrap.com/docs/4.1/content/reboot/).
         Note: Blog post and page content in theme’s frontend are controlled by Bootstrap’s columnar grid layout – not by the Gutenberg editor CSS. This means that b4st does not support Gutenberg’s extra-wide image blocks.
