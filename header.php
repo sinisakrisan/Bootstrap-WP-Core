@@ -11,6 +11,6 @@
 
 <?php get_template_part('parts/navbar'); ?> 
 
-<?php if ( is_front_page() && is_home() ) {
-    get_template_part('parts/hero');
+<?php if (get_theme_mod( 'core_hero_area' ) == 1 ){
+    get_template_part('parts/hero'); 
 }

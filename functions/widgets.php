@@ -11,10 +11,10 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Hero', 'core' ),
     'id'              => 'hero-widget-area',
-    'description'     => __( 'The Hero widget area', 'core' ),
+    'description'     => __( 'Hero widget area. Make sure to enable Frontpage Hero area in Layout options within Customizer. Widget title will not show up.', 'core' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
-    'before_title'    => '<h2 class="h4">',
+    'before_title'    => '<h2 style="display:none;">',
     'after_title'     => '</h2>',
   ) );
 

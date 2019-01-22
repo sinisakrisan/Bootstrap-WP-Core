@@ -153,6 +153,28 @@ function core_customizer_settings($wp_customize) {
             '' => 'Fixed',
     ) ) ) );
     
+    $wp_customize->add_setting( 'core_hero_area', 
+    array(
+        'default'    => '0',
+        'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+        'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
+        //'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+    ) );
+    
+    $wp_customize->add_control( new WP_Customize_Control(
+    $wp_customize, 'core_hero_area',
+    array(
+        'label'      => __( 'Frontpage Hero', 'core' ), 
+        'description' => __( 'Frontpage Hero Area enables widget position right under navbar on the home page. Perfect for your sliders. Hero area is always full width.', 'core' ),
+        'settings'   => 'core_hero_area', 
+        'priority'   => 30,
+        'section'    => 'layout',
+        'type'    => 'radio',
+        'choices' => array(
+            '0' => 'Disabled',
+            '1' => 'Enabled',
+    ) ) ) );
+    
 }
 
 add_action('customize_register', 'core_customizer_settings');
