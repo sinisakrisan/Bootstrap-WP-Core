@@ -73,6 +73,15 @@ function core_sidebar_after() {
     do_action('sidebar_after');
 }
 
+// Hero (in `/parts/hero.php`)
+
+function core_hero_before() {
+    do_action('hero_before');
+}
+function core_hero_after() {
+    do_action('hero_after');
+}
+
 // Footer (in `footer.php`)
 
 function core_footer_before() {

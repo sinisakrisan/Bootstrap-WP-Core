@@ -23,6 +23,11 @@ body {
     overflow:hidden;
 }
 
+.hero {
+    position:relative;
+    top:56px;
+}
+
 .wp-caption {}
 .wp-caption-text {}
 .sticky {}

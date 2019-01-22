@@ -4,6 +4,19 @@
  */
 
 function core_widgets_init() {
+    
+  /*
+  Hero (one widget area)
+   */
+  register_sidebar( array(
+    'name'            => __( 'Hero', 'core' ),
+    'id'              => 'hero-widget-area',
+    'description'     => __( 'The Hero widget area', 'core' ),
+    'before_widget'   => '<section class="%1$s %2$s">',
+    'after_widget'    => '</section>',
+    'before_title'    => '<h2 class="h4">',
+    'after_title'     => '</h2>',
+  ) );
 
   /*
   Sidebar (one widget area)
