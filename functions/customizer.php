@@ -26,18 +26,11 @@ function core_customizer_settings($wp_customize) {
         'label' => 'Navbar Color'
     );
     
-    // main color
+    // footer background
     $txtcolors[] = array(
-        'slug'=>'main_color', 
-        'default' => '#000',
-        'label' => 'Main Color'
-    );
- 
-    // secondary color
-    $txtcolors[] = array(
-        'slug'=>'secondary_color', 
-        'default' => '#666',
-        'label' => 'Secondary Color'
+        'slug'=>'footer_color', 
+        'default' => '#f8f9fa',
+        'label' => 'Footer Color'
     );
  
     // link color
@@ -180,8 +173,11 @@ function core_customizer_settings($wp_customize) {
 add_action('customize_register', 'core_customizer_settings');
 
 function core_custom_colors() {
-    // // Navbar color
+    // Navbar color
     $navbar_color = get_option( 'navbar_color' );
+    
+    // Footer color
+    $footer_color = get_option( 'footer_color' );
     
     // main color
     $main_color = get_option( 'main_color' );
@@ -200,19 +196,15 @@ function core_custom_colors() {
     ****************************************/
     ?>
     <style>
-        /* main color */
-        #site-title a, h1, h2, h2.page-title, h2.post-title, h2 a:link, h2 a:visited, footer h3 { 
-            color:  <?php echo $main_color; ?>; 
-        } 
-            
         /* Navbar Background */
         .navbar-background {
             background-color: <?php echo $navbar_color; ?>; 
         }
- 
-        /* secondary color */
-        #site-description, .sidebar h3, h4, h5, h6 {
-            color:  <?php echo $secondary_color; ?>; 
+        
+        /* Footer Background */
+        .footer-background {
+            background-color: <?php echo $footer_color; ?>; 
+            
         }
  
         /* links color */
