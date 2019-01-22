@@ -153,12 +153,6 @@ function core_customizer_settings($wp_customize) {
             '' => 'Fixed',
     ) ) ) );
     
-    /********************************
-    **                             **
-    *********     Slider      *******
-    **                             **
-    ********************************/
-    
 }
 
 add_action('customize_register', 'core_customizer_settings');

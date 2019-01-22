@@ -11,4 +11,4 @@
 
 <?php get_template_part('parts/navbar'); ?> 
 
-<?php //get_template_part('parts/carousel'); ?> 
+<?php //get_template_part('parts/hero'); ?> 
