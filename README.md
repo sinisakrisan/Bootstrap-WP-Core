@@ -10,6 +10,11 @@
 ## Description
 Core Theme is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.
 
+## Why Forking Perfectly Fine Theme?
+While [b4st](https://github.com/SimonPadbury/b4st) is indeed an awesome starter theme, I always felt it is lacking some basic features that have to be implemented over and over again every time when creating new theme for a new project. For example, Core offers a Customizer options to chose a logo, general improvements in visual department like deciding on fixed or fluid layout, color scheme, and even adding custom header (hero) area for homepage sliders. 
+
+Also, I was never a big fan of loading or relying on external assets, so Core will load all it's dependencies locally. (Fontawesome is currently exception, but that will change soon)
+
 ### Dependencies
 - Bootstrap 4 enqueued and served from the theme
 - jQuery and Modernizr enqueued and served from the WordPress
