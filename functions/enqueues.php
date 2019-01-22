@@ -17,7 +17,8 @@ if ( ! function_exists('core_enqueues') ) {
 		wp_enqueue_style('bootstrap-css');
         
         // Fontawesome 5.6.3
-		wp_register_style('fontawesome5', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', false, '5.6.3', null);
+		wp_register_style('fontawesome5', 
+        get_template_directory_uri() . '/fonts/fontawesome/css/all.min.css', false, '5.6.3', null);
 		wp_enqueue_style('fontawesome5');
 
 		wp_enqueue_style( 'gutenberg-blocks', get_template_directory_uri() . '/css/blocks.css' );
