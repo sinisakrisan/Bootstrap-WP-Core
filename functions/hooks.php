@@ -38,6 +38,7 @@ function core_navbar_brand() {
 function core_navbar_search() {
   if ( ! has_action('navbar_search') ) {
     ?>
+
     <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
       <div class="input-group">
         <input class="form-control border-secondary" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
@@ -48,6 +49,7 @@ function core_navbar_search() {
         </div>
       </div>
     </form>
+    
     <?php
   } else {
 		do_action('navbar_search');

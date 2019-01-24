@@ -12,10 +12,10 @@ function core_widgets_init() {
     'name'            => __( 'Hero', 'core' ),
     'id'              => 'hero-widget-area',
     'description'     => __( 'Hero widget area. Make sure to enable Frontpage Hero area in Layout options within Customizer. Widget title will not show up.', 'core' ),
-    'before_widget'   => '<section class="%1$s %2$s">',
-    'after_widget'    => '</section>',
-    'before_title'    => '<h2 style="display:none;">',
-    'after_title'     => '</h2>',
+    'before_widget'   => '<div id="%1$s" class="%2$s">',
+    'after_widget'    => '</div>',
+    'before_title'    => '<div style="display:none;">',
+    'after_title'     => '</div>',
   ) );
 
   /*
@@ -25,10 +25,10 @@ function core_widgets_init() {
     'name'            => __( 'Sidebar', 'core' ),
     'id'              => 'sidebar-widget-area',
     'description'     => __( 'The sidebar widget area', 'core' ),
-    'before_widget'   => '<section class="%1$s %2$s">',
-    'after_widget'    => '</section>',
-    'before_title'    => '<h2 class="h4">',
-    'after_title'     => '</h2>',
+    'before_widget'   => '<div id="%1$s" class="%2$s card mb-3">',
+    'after_widget'    => '</div>',
+    'before_title'    => '<div class="card-header">',
+    'after_title'     => '</div>',
   ) );
 
   /*
@@ -47,10 +47,10 @@ function core_widgets_init() {
     'name'            => __( 'Footer', 'core' ),
     'id'              => 'footer-widget-area',
     'description'     => __( 'The footer widget area', 'core' ),
-    'before_widget'   => '<div class="%1$s %2$s col-sm">',
+    'before_widget'   => '<div id="%1$s" class="%2$s col-sm">',
     'after_widget'    => '</div>',
-    'before_title'    => '<h2 class="h4">',
-    'after_title'     => '</h2>',
+    'before_title'    => '<h3 class="footer-widget-title">',
+    'after_title'     => '</h3>',
   ) );
 
 }
