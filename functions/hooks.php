@@ -95,13 +95,15 @@ function core_footer_after() {
 function core_bottomline() {
 	if ( ! has_action('bottomline') ) {
 		?>
-    <div class="footer-background container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?>">
-      <div class="row pt-3">
-        <div class="col-sm">
-          <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
-        </div>
-        <div class="col-sm">
-          <p class="text-center text-sm-right"><a href="https://sinisakrisan.me">Core</a> theme for WordPress 5</p>
+    <div class="footer-background">
+      <div class="container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?>">
+        <div class="row pt-3">
+          <div class="col-sm">
+            <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+          </div>
+          <div class="col-sm">
+            <p class="text-center text-sm-right"><a href="https://sinisakrisan.me">Core</a> theme for WordPress 5</p>
+          </div>
         </div>
       </div>
     </div>

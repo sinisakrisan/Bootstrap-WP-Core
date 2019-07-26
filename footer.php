@@ -1,8 +1,8 @@
 <?php core_footer_before();?>
 
-<footer id="footer" class="mt-5 bg-light">
+<footer id="footer" class="mt-5 footer-background">
 
-  <div class="footer-background container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?>">
+  <div class="container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?>">
 
     <?php if(is_active_sidebar('footer-widget-area')): ?>
     <div class="row pt-5 pb-4" id="footer" role="navigation">
