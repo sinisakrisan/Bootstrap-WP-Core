@@ -4,7 +4,7 @@
 ?>
 
 <div id="main">
-    <div class="container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?> mt-5">
+    <div class="container<?php esc_html_e( get_theme_mod( 'core_layout' ), '-fluid' ); ?> mt-5">
         <div class="row">
 
             <div class="col-sm">

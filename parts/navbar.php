@@ -1,6 +1,6 @@
 <?php core_navbar_before();?>
 
-<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-<?php esc_html_e( get_theme_mod( 'core_navbar_accent' ) ); ?> navbar-background">
+<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-<?php esc_html_e( get_theme_mod( 'core_navbar_accent' ), 'light' ); ?> navbar-background">
     
   <div class="container<?php esc_html_e( get_theme_mod( 'core_layout' ) ); ?>">
 

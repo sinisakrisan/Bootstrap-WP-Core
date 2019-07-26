@@ -95,7 +95,7 @@ function core_customizer_settings($wp_customize) {
 
     $wp_customize->add_setting( 'core_navbar_accent', 
     array(
-        'default'    => 'light',
+        'default'    => 'Dark',
         'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
         'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
         //'transport'  => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
@@ -183,11 +183,11 @@ function core_custom_colors() {
     // Footer color
     $footer_color = get_option( 'footer_color' );
     
-    // main color
-    $main_color = get_option( 'main_color' );
+    // main color - not used yet
+    //$main_color = get_option( 'main_color' );
  
-    // secondary color
-    $secondary_color = get_option( 'secondary_color' );
+    // secondary color - not used yet
+    //$secondary_color = get_option( 'secondary_color' );
  
     // link color
     $link_color = get_option( 'link_color' );
