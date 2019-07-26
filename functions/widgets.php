@@ -7,7 +7,8 @@ function core_widgets_init() {
     
   /*
   Hero (one widget area)
-   */
+  Not developed yet
+  Comment out
   register_sidebar( array(
     'name'            => __( 'Hero', 'core' ),
     'id'              => 'hero-widget-area',
@@ -17,6 +18,7 @@ function core_widgets_init() {
     'before_title'    => '<div style="display:none;">',
     'after_title'     => '</div>',
   ) );
+    */
 
   /*
   Sidebar (one widget area)
@@ -27,8 +29,8 @@ function core_widgets_init() {
     'description'     => __( 'The sidebar widget area', 'core' ),
     'before_widget'   => '<div id="%1$s" class="%2$s card mb-3">',
     'after_widget'    => '</div>',
-    'before_title'    => '<div class="card-header">',
-    'after_title'     => '</div>',
+    'before_title'    => '<div class="card-header"><h4>',
+    'after_title'     => '</div></h4>',
   ) );
 
   /*
