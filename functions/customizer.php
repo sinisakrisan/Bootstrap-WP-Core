@@ -22,29 +22,29 @@ function core_customizer_settings($wp_customize) {
     // navbar background
     $txtcolors[] = array(
         'slug'=>'navbar_color', 
-        'default' => '#5c4186',
-        'label' => 'Navbar Color'
+        'default' => '#cecece',
+        'label' => __( 'Navbar color', 'core' )
     );
     
     // footer background
     $txtcolors[] = array(
         'slug'=>'footer_color', 
-        'default' => '#f8f9fa',
-        'label' => 'Footer Color'
+        'default' => '#cecece',
+        'label' => __( 'Footer color', 'core' )
     );
  
     // link color
     $txtcolors[] = array(
         'slug'=>'link_color', 
         'default' => '#008AB7',
-        'label' => 'Link Color'
+        'label' => __( 'Link color', 'core' ),
     );
  
     // link color ( hover, active )
     $txtcolors[] = array(
         'slug'=>'hover_link_color', 
         'default' => '#9e4059',
-        'label' => 'Link Color (on hover)'
+        'label' => __( 'Hover link color', 'core' ),
     );
     
     
@@ -56,8 +56,7 @@ function core_customizer_settings($wp_customize) {
             $txtcolor['slug'], array(
                 'default' => $txtcolor['default'],
                 'type' => 'option', 
-                'capability' => 
-                'edit_theme_options'
+                'capability' => 'edit_theme_options'
             )
         );
         // CONTROLS
@@ -107,7 +106,7 @@ function core_customizer_settings($wp_customize) {
     $wp_customize, 'core_navbar_accent',
     array(
         'label'      => __( 'Navbar Accent', 'core' ), 
-        'description' => __( 'Change the navbar accent color' ),
+        'description' => __( 'Change the navbar accent color', 'core' ),
         'settings'   => 'core_navbar_accent', 
         'priority'   => 10,
         'section'    => 'colors',
