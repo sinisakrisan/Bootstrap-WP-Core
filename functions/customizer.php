@@ -146,6 +146,11 @@ function core_customizer_settings($wp_customize) {
             '' => 'Fixed',
     ) ) ) );
     
+    
+    // Hero Area 
+    // To be developed, comment out for time being
+    /*
+    
     $wp_customize->add_setting( 'core_hero_area', 
     array(
         'default'    => '0',
@@ -167,6 +172,7 @@ function core_customizer_settings($wp_customize) {
             '0' => 'Disabled',
             '1' => 'Enabled',
     ) ) ) );
+    */
     
 }
 
