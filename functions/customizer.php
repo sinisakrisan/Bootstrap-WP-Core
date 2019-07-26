@@ -173,7 +173,6 @@ function core_customizer_settings($wp_customize) {
             '1' => 'Enabled',
     ) ) ) );
     */
-    
 }
 
 add_action('customize_register', 'core_customizer_settings');
