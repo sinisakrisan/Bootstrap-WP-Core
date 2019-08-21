@@ -26,7 +26,7 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Sidebar', 'core' ),
     'id'              => 'sidebar-widget-area',
-    'description'     => __( 'Sidebar widget area', 'core' ),
+    'description'     => __( 'Sidebar widget area. Widgets will be shown in sidebar area.', 'core' ),
     'before_widget'   => '<div class="%1$s %2$s mb-3">',
     'after_widget'    => '</div>',
     'before_title'    => '<h5><div class="card-header">',
@@ -39,7 +39,7 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Search', 'core' ),
     'id'              => 'search-widget-area',
-    'description'     => __( 'Search widget area', 'core' ),
+    'description'     => __( 'Search widget area. For best performance, publish the search widget here and chose default widget style.', 'core' ),
     'before_widget'   => '<div class="%1$s %2$s">',
     'after_widget'    => '</div>',
     'before_title'    => '<h5><div class="card-header">',
@@ -61,7 +61,7 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Footer', 'core' ),
     'id'              => 'footer-widget-area',
-    'description'     => __( 'Footer widget area', 'core' ),
+    'description'     => __( 'Footer widget area. Expand the footer area with up to 12 inline widgets automatically resizing to fite the whole available footer area', 'core' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm">',
     'after_widget'    => '</div>',
     'before_title'    => '<h5><div class="card-header">',
@@ -83,8 +83,8 @@ function core_in_widget_form($t,$return,$instance){
   ?>
   <hr>
   <h3>Widget options:</h3>
-  <div style="background:#800; padding:10px; margin-bottom:10px;">
-      <label for="<?php echo $t->get_field_id('style'); ?>">Widget style:</label>
+  <div style="background:#eee; padding:5px; margin-bottom:5px;">
+      <label for="<?php echo $t->get_field_id('style'); ?>">Select style:</label>
       <select id="<?php echo $t->get_field_id('style'); ?>" name="<?php echo $t->get_field_name('style'); ?>">
           <option <?php selected($instance['style'], 'none border-0');?> value="none border-0">--Default--</option>
           <option <?php selected($instance['style'], 'text-white bg-primary');?>value="text-white bg-primary">Blue</option>
