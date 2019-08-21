@@ -24,7 +24,7 @@
         ) );
       ?>
 
-      <?php core_navbar_search();?>    
+        
     </div>
 
   </div>
