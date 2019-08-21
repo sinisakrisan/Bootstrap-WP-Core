@@ -26,8 +26,21 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Sidebar', 'core' ),
     'id'              => 'sidebar-widget-area',
-    'description'     => __( 'The sidebar widget area', 'core' ),
+    'description'     => __( 'Sidebar widget area', 'core' ),
     'before_widget'   => '<div class="%1$s %2$s mb-3">',
+    'after_widget'    => '</div>',
+    'before_title'    => '<h5><div class="card-header">',
+    'after_title'     => '</div></h5>',
+  ) );
+  
+  /*
+  Search (one widget area)
+   */
+  register_sidebar( array(
+    'name'            => __( 'Search', 'core' ),
+    'id'              => 'search-widget-area',
+    'description'     => __( 'Search widget area', 'core' ),
+    'before_widget'   => '<div class="%1$s %2$s">',
     'after_widget'    => '</div>',
     'before_title'    => '<h5><div class="card-header">',
     'after_title'     => '</div></h5>',
@@ -48,7 +61,7 @@ function core_widgets_init() {
   register_sidebar( array(
     'name'            => __( 'Footer', 'core' ),
     'id'              => 'footer-widget-area',
-    'description'     => __( 'The footer widget area', 'core' ),
+    'description'     => __( 'Footer widget area', 'core' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm">',
     'after_widget'    => '</div>',
     'before_title'    => '<h5><div class="card-header">',

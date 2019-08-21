@@ -6,9 +6,13 @@
 if ( ! function_exists('core_search_form') ) {
 
   function core_search_form( $form ) {
-    $form = '<form class="form-inline mb-3" role="search" method="get" id="searchform" action="' . home_url('/') . '" >
-      <input class="form-control mr-sm-1" type="text" value="' . get_search_query() . '" placeholder="' . esc_attr_x('Search', 'core') . '..." name="s" id="s" />
-      <button type="submit" id="searchsubmit" value="'. esc_attr_x('Search', 'core') .'" class="btn btn-primary"><i class="fas fa-search"></i></button>
+    $form = '<form class="form-inline" role="search" method="get" id="searchform" action="' . home_url('/') . '" >
+      <div class="input-group">
+      <input class="form-control" type="text" value="' . get_search_query() . '" placeholder="' . esc_attr_x('Search', 'core') . '..." name="s" id="s" />
+      <div class="input-group-append">
+      <button type="submit" id="searchsubmit" value="'. esc_attr_x('Search', 'core') .'" class="btn btn-danger"><i class="fas fa-search"></i></button>
+      </div>
+      </div>
     </form>';
     return $form;
   }

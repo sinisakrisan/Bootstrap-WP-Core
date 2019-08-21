@@ -24,7 +24,13 @@
         ) );
       ?>
 
-        
+      <!-- Search Widget -->
+      <?php if ( is_active_sidebar( 'search-widget-area' ) ) : ?>
+		    <div id="search-widget" class="search-widget widget-area" role="complementary">
+			   <?php dynamic_sidebar( 'search-widget-area' ); ?>
+		    </div>
+      <?php endif; ?>
+      <!-- Search Widget -->  
     </div>
 
   </div>
