@@ -11,7 +11,7 @@
 		// Comments
 
 		$('.commentlist li').addClass('card mb-3');
-		$('.comment-reply-link').addClass('btn btn-secondary');
+		$('.comment-reply-link').addClass('btn btn-danger');
 
 		// Forms
 
